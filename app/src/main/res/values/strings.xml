@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Huce Android</string>
+    <string name="sign_in_to_see_your_dashboard">Sign in to see your dashboard</string>
+    <string name="welcome_back">Welcome back!</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_in_button">Sign In</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="don_t_have_account_sign_up">Don\'t have account? Sign up</string>
+</resources>
