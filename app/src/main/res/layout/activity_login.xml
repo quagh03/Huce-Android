@@ -24,14 +24,14 @@
             android:layout_height="wrap_content"
             android:text="@string/welcome_back"
             android:textStyle="bold"
-            android:textSize="40sp"/>
+            android:textSize="45sp"/>
 
         <!-- Subtitle Text -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/sign_in_to_see_your_dashboard"
-            android:textSize="22sp" />
+            android:textSize="27sp" />
 
         <!-- Username EditText -->
         <EditText
