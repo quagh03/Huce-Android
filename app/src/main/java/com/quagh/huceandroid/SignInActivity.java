@@ -13,8 +13,7 @@ import android.widget.Toast;
 public class SignInActivity extends AppCompatActivity {
     private Button btnLogin;
     private EditText edUsername, edPassword;
-
-    private TextView tvSignUpLink;
+    private TextView tvSignUpLink, tvForgotPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +28,7 @@ public class SignInActivity extends AppCompatActivity {
         edUsername = findViewById(R.id.edUsername);
         edPassword = findViewById(R.id.edPassword);
         tvSignUpLink = findViewById(R.id.tvSignUp);
+        tvForgotPassword = findViewById(R.id.tvForgotPassword);
 
         if (btnLogin == null || edUsername == null || edPassword == null) {
             throw new IllegalStateException("One or more views not found");
@@ -54,13 +54,23 @@ public class SignInActivity extends AppCompatActivity {
                 Toast.makeText(this, "Failed", Toast.LENGTH_LONG).show();
             }
         });
+
         tvSignUpLink.setOnClickListener(view -> {
             SignUpActivity();
+        });
+
+        tvForgotPassword.setOnClickListener(view -> {
+            ForgotPasswordActivity();
         });
     }
 
     public void SignUpActivity(){
         Intent intent = new Intent(this, SignUpActivity.class);
+        startActivity(intent);
+    }
+
+    public void ForgotPasswordActivity(){
+        Intent intent = new Intent(this, ForgotPasswordActivity.class);
         startActivity(intent);
     }
 
